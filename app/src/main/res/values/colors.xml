@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorLine">#d7d7d7</color>
+    <color name="colorAqua">#1966A7</color>
+    <color name="colorTranparent">#0000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBackGround">#f1f1f5</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#747474</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="colorHeader">#f7f7f7</color>
+</resources>

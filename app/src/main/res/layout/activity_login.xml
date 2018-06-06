@@ -1,0 +1,134 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data class="vn.aquavietnam.aquaiget.LoginBinding">
+        <variable
+            name="loginVM"
+            type="vn.aquavietnam.aquaiget.login.LoginVM" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scvLogin"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:context=".login.UserLoginActivity">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".login.UserLoginActivity">
+                <View
+                    android:id="@+id/vwContentLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="V,1:0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imvLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/edtUserName"
+                    app:layout_constraintEnd_toEndOf="@+id/vwContentLogo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/vwContentLogo"
+                    android:src="@drawable/iconlogoaqua" />
+
+                <vn.aquavietnam.aquaiget.customview.EditTextWithBorder
+                    android:id="@+id/edtUserName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vwContentLogo" />
+
+                <vn.aquavietnam.aquaiget.customview.EditTextWithBorder
+                    android:id="@+id/edtPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtUserName" />
+
+                <Button
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_corner"
+                    android:text="Đăng nhập"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+                <RadioButton
+                    android:id="@+id/rdbRememberPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Nhớ mật khẩu"
+                    app:layout_constraintStart_toStartOf="@+id/btnSignIn"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTranparent"
+                    android:text="Quên mật khẩu"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAqua"
+                    app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Bạn muốn đồi mật khẩu?"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/rdbRememberPass" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorTranparent"
+                    android:text="Đổi mật khẩu"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAqua"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView" />
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cstLogin">
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+
+</layout>
+

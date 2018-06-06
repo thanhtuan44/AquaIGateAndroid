@@ -1,0 +1,88 @@
+<layout>
+    <data class="vn.aquavietnam.aquaiget.CategoryRowBinding">
+        <variable
+            name="category"
+            type="vn.aquavietnam.aquaiget.model.Category" />
+    </data>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cstLayoutBase"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+    <View
+        android:id="@+id/vwBase"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintDimensionRatio="V,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/vwContentImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/vwBase"
+        app:layout_constraintStart_toStartOf="@id/vwBase"
+        app:layout_constraintTop_toTopOf="@id/vwBase"
+        app:layout_constraintBottom_toTopOf="@+id/txvBase"/>
+    <vn.aquavietnam.aquaiget.common.customview.image.AquaImageView
+        android:id="@+id/imvProduct"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        image="@{category.categoryImage}"
+        app:layout_constraintDimensionRatio="V,1:1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/vwContentImage"
+        app:layout_constraintBottom_toBottomOf="@id/vwContentImage"
+         />
+
+    <TextView
+        android:id="@+id/txvBase"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@{category.categoryName}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/vwBase" />
+
+    <View
+        android:id="@+id/vwLineRight"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/colorLine"
+        app:layout_constraintEnd_toEndOf="@id/cstLayoutBase"
+        app:layout_constraintBottom_toBottomOf="@id/cstLayoutBase"
+        app:layout_constraintTop_toTopOf="@id/cstLayoutBase" />
+    <View
+        android:id="@+id/vwLineBottom"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"
+        app:layout_constraintEnd_toEndOf="@id/cstLayoutBase"
+        app:layout_constraintStart_toStartOf="@id/cstLayoutBase"
+        app:layout_constraintBottom_toBottomOf="@id/cstLayoutBase" />
+</android.support.constraint.ConstraintLayout>
+</layout>

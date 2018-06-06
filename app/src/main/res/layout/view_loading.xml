@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_layout_loading"
+    android:background="@color/colorWhite">
+    <View
+        android:id="@+id/vwContentLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="@id/vwContentLoading"
+        app:layout_constraintEnd_toEndOf="@id/vwContentLoading"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/vwContentLoading"
+        app:layout_constraintTop_toTopOf="@id/vwContentLoading"
+        android:theme="@style/AppTheme.AquaAccent"/>
+    <ImageView
+        android:id="@+id/imvLoading"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:clickable="false"
+        android:src="@drawable/iconlogo"
+        app:layout_constraintBottom_toBottomOf="@id/vwContentLoading"
+        app:layout_constraintEnd_toEndOf="@id/vwContentLoading"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/vwContentLoading"
+        app:layout_constraintTop_toTopOf="@id/vwContentLoading"/>
+</android.support.constraint.ConstraintLayout>

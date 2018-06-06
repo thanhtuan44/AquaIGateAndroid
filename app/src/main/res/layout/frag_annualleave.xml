@@ -1,0 +1,66 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data class="vn.aquavietnam.aquaiget.AnnualLeaveBinding">
+        <variable
+            name="annualLeaveVM"
+            type="vn.aquavietnam.aquaiget.homepage.annualleave.AnnualLeaveVM" />
+        <variable
+            name="annualLeave1VM"
+            type="vn.aquavietnam.aquaiget.homepage.annualleave.AnnualLeave1VM" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_AnnualLeavePage">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <vn.aquavietnam.aquaiget.customview.ButtonWithArrow
+                android:id="@+id/btnCurrentYear"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/rclvCurrentYear"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rclvCurrentYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCurrentYear"
+                android:nestedScrollingEnabled="false"
+                app:configuration="@{annualLeaveVM.recyclerConfiguration}" />
+            <vn.aquavietnam.aquaiget.customview.ButtonWithArrow
+                android:id="@+id/btnLastYear"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rclvCurrentYear"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rclvLastYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLastYear"
+                android:nestedScrollingEnabled="false"
+                app:configuration="@{annualLeave1VM.recyclerConfiguration}" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cstAnnualLeave">
+    </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+</layout>

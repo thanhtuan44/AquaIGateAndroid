@@ -1,0 +1,60 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data class="vn.aquavietnam.aquaiget.ProductDetailBinding">
+        <variable
+            name="productDetailVM"
+            type="vn.aquavietnam.aquaiget.product.productdetail.ProductDetailVM" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:descendantFocusability="blocksDescendants"
+            tools:context="vn.aquavietnam.aquaiget.homepage.HomePageFragment">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent">
+                <vn.aquavietnam.aquaiget.common.customview.slider.AquaSlider
+                    android:id="@+id/sldBanner"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorWhite"
+                    app:layout_constraintDimensionRatio="V,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                </vn.aquavietnam.aquaiget.common.customview.slider.AquaSlider>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rclvCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sldBanner"
+                    app:layout_constraintVertical_bias="1.0"
+                    android:nestedScrollingEnabled="false"
+                    app:configuration="@{productDetailVM.recyclerConfiguration}" />
+                />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cstProductDetail">
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+</layout>
+

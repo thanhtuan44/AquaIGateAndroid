@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AquaIGate</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="username">UserName</string>
+    <string name="title_activity_tabbar">TabbarActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string name="done">Done</string>
+    <string name="homepage_WokingDaily">Working Daily</string>
+    <string name="homepage_Bonus">Bonus</string>
+    <string name="homepage_Annualleave">Annualleave</string>
+    <string name="homepage_MissingNonScan">Missing NonScan</string>
+
+    <string name="reason">Lý do : %s</string>
+    <string name="totaldate">Số ngày : %s</string>
+    <string name="totime">Thời gian kết thúc : %s</string>
+    <string name="frtime">Thời gian bắt đầu : %s</string>
+    <string name="frdate">Từ ngày : %s</string>
+    <string name="todate">Đến ngày : %s</string>
+
+    <string name="nonscandate">Ngày quên quẹt thẻ : %s</string>
+    <string name="nonscanreason">Lý do quên quẹt thẻ : %s</string>
+
+    <string name="overtimepurpose">Mục đích tăng ca : %s</string>
+    <string name="overtimetype">Loại tăng ca : %s</string>
+    <string name="overtimetotaltime">Thời gian tăng ca : %s</string>
+    <string name="overtimedate">Ngày tăng ca : %s</string>
+
+    <string name="confirmname">Tên : %s</string>
+    <string name="confirmid">Mã nhân viên : %s</string>
+    <string name="confirmdate">Ngày làm đơn  : %s</string>
+</resources>

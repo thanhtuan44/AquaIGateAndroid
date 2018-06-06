@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cstViewWithLine"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnWithLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTranparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/lblViewWithLineInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="Info"
+        android:textColor="@color/colorGray"
+        app:layout_constraintStart_toStartOf="@+id/btnWithLine"
+        app:layout_constraintTop_toTopOf="@+id/btnWithLine"
+        app:layout_constraintBottom_toBottomOf="@+id/btnWithLine"/>
+    <TextView
+        android:id="@+id/lblViewWithLineValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical|right"
+        android:text="Value"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toEndOf="@id/lblViewWithLineInfo"
+        app:layout_constraintEnd_toEndOf="@+id/btnWithLine"
+        app:layout_constraintTop_toTopOf="@+id/btnWithLine"
+        app:layout_constraintBottom_toBottomOf="@+id/btnWithLine"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="@+id/btnWithLine"
+        app:layout_constraintEnd_toEndOf="@+id/btnWithLine"
+        app:layout_constraintTop_toBottomOf="@+id/btnWithLine"
+        />
+
+</android.support.constraint.ConstraintLayout>

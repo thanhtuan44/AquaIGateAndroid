@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "822860855543",
+    "firebase_url": "https://aquaigate.firebaseio.com",
+    "project_id": "aquaigate",
+    "storage_bucket": "aquaigate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822860855543:android:0667f033d79712d6",
+        "android_client_info": {
+          "package_name": "vn.aquavietnam.aquaiget"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822860855543-e1hh6crjhhrlu4f3s7o876osh5flocd1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.aquavietnam.aquaiget",
+            "certificate_hash": "f8f646562108903e0bd48a040ea0166c1346e34b"
+          }
+        },
+        {
+          "client_id": "822860855543-gmt5e5i3s0qmn947ftksp1985uhsg6e8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "822860855543-gmt5e5i3s0qmn947ftksp1985uhsg6e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZXg09-2DyYdgVBd7sOOzjRR_sXVoOzVQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822860855543-gmt5e5i3s0qmn947ftksp1985uhsg6e8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

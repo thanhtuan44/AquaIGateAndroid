@@ -1,0 +1,60 @@
+<layout>
+    <data class="vn.aquavietnam.aquaiget.WorkDateDetailSub1Binding">
+        <import type="vn.aquavietnam.aquaiget.StringUtils"/>
+        <variable
+            name="workdatedetail"
+            type="vn.aquavietnam.aquaiget.model.WorkDate" />
+    </data>
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_workdate_detail1">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <vn.aquavietnam.aquaiget.customview.ViewWithLine
+                android:id="@+id/vwlWorkDate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <vn.aquavietnam.aquaiget.customview.ViewWithLine
+                android:id="@+id/vwlTimeIn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vwlWorkDate"
+                />
+            <vn.aquavietnam.aquaiget.customview.ViewWithLine
+                android:id="@+id/vwlTimeOut"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vwlTimeIn"
+                />
+            <vn.aquavietnam.aquaiget.customview.ViewWithLine
+                android:id="@+id/vwlWorkJob"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vwlTimeOut"
+                />
+            <vn.aquavietnam.aquaiget.customview.ViewWithLine
+                android:id="@+id/vwlTotalTime"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vwlWorkJob"
+                />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>
